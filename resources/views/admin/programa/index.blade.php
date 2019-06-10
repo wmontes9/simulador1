@@ -28,15 +28,13 @@
 						<td>@{{program.version}}</td>
 						<td><a href="" v-on:click.prevent="editProgram(program)"><i class="glyphicon glyphicon-pencil" aria-hidden="true"></i></a></td>
 						<td><a href="" v-on:click.prevent="deleteProgram(program.id)"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></a></td>
-						<td><a href="" v-on:click.prevent="getCompetencia(program.id,program.nombre)">Competencias</a></td>
+						<td><a href="" v-on:click.prevent="getCompetencia(program.id)">Competencias</a></td>
 						<td><a href="" v-on:click.prevent="getfichas(program.id)">Fichas</a></td>
 					</tr>
 				</table>
 			</div>
 			@include("admin.programa.edit")
 		    @include("admin.programa.create")
-			@include("admin.competencia.index")
-			@include("admin.competencia.edit")
 		</div>
 		
 		

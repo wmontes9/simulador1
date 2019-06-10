@@ -1,14 +1,10 @@
-<form action="" v-on:submit.prevent="newCompetencia()">
-  <div class="modal  fade" id="detailcompetencia">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h2 class="text-center">@{{nombre}}</h2>
-          <h4>Competencias</h4>
-        </div>
-        <div class="modal-body">
-          <table class="table table-bordered table-striped table-responsive">
+@extends("layouts.app_admin")
+@section("content")
+
+	<div class="row" id="appControllercompetencia">
+  <form action="" v-on:submit.prevent="newCompetencia()">
+		<div class="container">
+    <table class="table table-bordered table-striped table-responsive">
             <tr>
               <th>#</th>
               <th>Codigo</th>
@@ -17,7 +13,7 @@
               <th colspan="5" class="text-center">Opciones</th>
               <th width="30"><i class="glyphicon glyphicon-plus"  v-on:click.prevent="ShowFormGrup()"></i></th>
             </tr>
-            <tr v-for="competencia in competenciaGroup">
+            <tr v-for="competencia in competencias">
               <td>@{{competencia.id}}</td>
               <td>@{{competencia.codigo}}</td>
               <td colspan="3">@{{competencia.descripcion}}</td>
@@ -42,8 +38,10 @@
               <td width="20" colspan="3"><button type="submit" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></i></button></td>
             </tr>
           </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</form>
+		</div>
+    @include("admin.competencia.edit")
+    </form>
+	</div>
+  <script type="text/javascript" src="{{asset('js/controller/CompetenciaController.js')}}"></script>
+
+@endsection

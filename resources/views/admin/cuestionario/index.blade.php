@@ -13,7 +13,7 @@
                     <th>Descripción</th>
                     <th>Fecha</th>
                     <th>Estado</th>
-                    <th>Duracion</th>
+                    <th>Duración</th>
                     <th colspan="6" class="">Opciones</th>
                 </tr>
                 <tr v-for="cuestionario in cuestionarios">
@@ -36,4 +36,3 @@
 </div>
 <script type="text/javascript" src="{{asset('js/controller/CuestionarioController.js')}}"></script>
 @endsection
-//prueba

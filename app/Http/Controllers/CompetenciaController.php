@@ -18,6 +18,7 @@ class CompetenciaController extends Controller
     public function index()
     {
 
+        return view("admin.competencia.index");
     }
     public function create()
     {
@@ -34,7 +35,7 @@ class CompetenciaController extends Controller
     public function store(Request $request)
     {
         Competencia::create([
-            "id_programa" => Session::get("id_programa"),
+            "id_programa" => Session::get("programa"),
             "codigo" => $request["codigo"],
             "descripcion" => $request["descripcion"],
             "url_videoc" => $request["url_videoc"]
@@ -49,9 +50,10 @@ class CompetenciaController extends Controller
      * @param  \App\Competencia  $competencia
      * @return \Illuminate\Http\Response
      */
-    public function show(Competencia $competencia)
+    public function show($id)
     {
-        //
+        Session::put("programa",$id);
+        return;
     }
 
     /**
@@ -102,9 +104,9 @@ class CompetenciaController extends Controller
             return $cant;
         }
     }
-    public function getCompetencia($id)
+    public function getCompetencia()
     {
-        Session::put("id_programa",$id);
+        $id = Session::get("programa");
         $competencias = DB::table('competencia')
             ->join('programa', 'competencia.id_programa', '=', 'programa.id')
             ->where('competencia.id_programa', '=', $id)
