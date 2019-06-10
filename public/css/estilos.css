@@ -1,0 +1,267 @@
+.modales{
+	 width: 300px;
+	 margin-left: 80px;
+}
+.formNewGrupo{
+	display: none;
+	}
+.competencia{
+ display: none;
+}
+/*----------------------------*/
+#preloader{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 99900;
+	display: none;
+   }
+   #preloader #animation{
+	border:5px #777 solid;
+	border-top: #000 solid;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	border-radius: 50px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 9999999;
+	animation: 0.4s precargar linear infinite;
+   }
+   @keyframes precargar{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+   }
+/*-----------------------------------*/
+               
+.fondo>img{
+        
+	width: 100%;
+	height: 100%;
+			z-index: -1;
+			position: fixed;
+			left: -10px;
+			top: 5px;
+	}  
+	 .baner{
+		 align-content: center;
+		 align-items: center;
+		 text-align: center;
+		 justify-content: center;
+	 }
+	 .baner P{
+		  text-align: center;
+		 position: relative;
+		 font-size: 15PX;
+		 color: white;
+		   top: 13PX;
+	 }
+	
+	 .baner H1{
+		 text-align: center;
+		 position: relative;
+		 font-size: 30PX;
+		 color: white;
+		 top: 10PX;
+		 
+		 
+	 }
+	 .video{
+		
+		 position: relative;
+		
+		 margin: 10px;
+	 }
+	.baner{
+	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#75b330), to(#238276));
+	height: 150px;
+	width: 100%;
+	-moz-box-shadow: -7px 0px 62px #000000;
+	-webkit-box-shadow: -7px 0px 62px #000000;
+	box-shadow: -7px 0px 62px #000000;
+	top: -20PX;
+	  position: relative;
+	
+	}
+	
+	
+	.img2{
+	width: 120PX;
+	float: left;
+	position: relative;
+	padding: 8PX;
+	
+	}
+	.img1{
+	width: 120PX;
+	float: right;
+	position: relative;
+	padding: 8PX;
+	
+	}
+	 .circulo{
+		 height: 100px;
+		 margin: 15px;
+	   float: right;
+		 position: relative;
+		 background-color: white;
+		 border-color: black;
+		 width: 100px;
+		-moz-box-shadow: -3px 10px 22px #000000;
+	-webkit-box-shadow: -3px 10px 22px #000000;
+	box-shadow: -3px 10px 22px #000000;
+		 border-radius: 5px;
+		 
+		 
+		 
+	 }   
+	 .imgfo{
+		
+		 
+		 width: 100%;
+		  border-radius: 5px;
+		  
+	 } 
+	 .footer{
+		 position: relative;
+		 top: 20px;
+		 background: #238276;
+		 width: 100%;
+		 height: 130px;
+	 }
+	 
+	 .footer p{
+		 margin: 5px;
+		 float: left;
+		 font-size: 11px;
+		 color: white;
+		 position: relative;
+		 width: 50%;
+	 }
+	 .i2{
+		 padding-top: 30px;
+		 
+	 }
+	
+	 #boton{
+		 background-color: #238276 !important;
+		 color: white;
+	 }
+	 
+	 #lo{
+		 background: rgba(90,90,90,0.8) !important;
+		 color: white;
+		opacity: 10;
+		 align-items: center;
+	 }
+	 #lo a{
+		 color: white;
+		 text-align: center;
+	 }
+	 .close{
+		 color: rgba(5, 5, 5, 0.993) !important;
+	 }
+	 #TEXTOUS2{
+		 text-align: center;
+	background: rgba(87,181,0,0.5);
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3)!important;
+	margin:20px;
+	float: right;
+	width: 200PX;
+	left: -30PX;
+	position: relative;
+	color:white;
+	border-radius: 2px;
+	top: 20PX;
+		 
+		 
+	}
+	
+	 #innovem{
+		  width: 60%;
+		 margin: auto;
+		 text-align: center;
+	 }
+	 #sipaa{
+		  width: 18%;
+		 margin: auto;
+		 text-align: center;
+	 }
+	
+	 .SLA>P{
+		 font-size: 40PX;
+		 text-align: center;
+		 padding: 30PX;
+	 }
+	 #SLAT{
+		 text-align: center;
+		 width: 70%;
+		   background: rgba(31,31,31,0.5);
+		  margin: auto;
+		 padding: 5%;
+		  -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3)!important;
+		 color: white;
+	 }
+	 
+	
+	@media (max-width: 700px){
+	#TEXTOUS2{
+	width: 30%;
+	left: 30px;
+	float: none;
+	}
+	.circulo{
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	}
+	
+	.baner H1{
+	font-size: 18px;
+	}
+	.video>iframe{
+	height: 300px;
+	width: 90%;
+	}
+	.img2,.img1{
+	width: 100px;
+	}
+	.footer p{
+	font-size: 6px;
+	}
+	.SLA>P{
+	font-size: 20PX; }
+	#SLAT>h3{
+	font-size: 15px;
+	}
+	#SLAT>p{
+	font-size: 10px;
+	}
+	#SLAT{
+	width: 90%;  
+	}
+	#myCarousel{
+	width: 95%;
+	margin-top: 20px; 
+	left: -50px;
+	}
+	}
+	
