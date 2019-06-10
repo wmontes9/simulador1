@@ -5,13 +5,9 @@ new Vue({
 	},
 	data:{
 		fillProgram:{"id":"","nombre":"","codigo":"","nivel_formacion":"","estado":"","version":""},
-		fillCompetencia:{'id':'','id_programa':'','codigo':'','descripcion':'','url_videoc':''},
 		programs:[],
 		programa:"",
 		competenciaGroup:[],
-		newCodigo:"",
-		newDescripcion:"",
-		newvideoc:"",
 		nombre:"",
 		codigo:"",
 		nivel_formacion:"",

@@ -5,7 +5,10 @@ new Vue({
 	},
 	data:{
 		fillCompetencia:{"id":"","id_programa":"","codigo":"","descripcion":"","url_videoc":""},
-		competencias:[],
+        competencias:[],
+        newCodigo:"",
+		newDescripcion:"",
+		newvideoc:"",
 	},methods:{
 		getCompetencias:function(){
 			axios.get("getCompetencia").then(response=>{
@@ -41,18 +44,19 @@ new Vue({
 			this.fillCompetencia.codigo = competencia.codigo;
 			this.fillCompetencia.descripcion = competencia.descripcion;
 			this.fillCompetencia.url_videoc = competencia.url_videoc;
-			$("#detailcompetencia").modal("hide");
 			$("#editGrup").modal("show");
 		},
-		updateComp:function(id){
-			var url = "competencia/"+id;
+		updateComp:function(){
+            var url = "competencia/"+ this.fillCompetencia.id;
 			axios.put(url,this.fillCompetencia).then(response=>{
-			  $("#editGrup").modal("hide");
+                this.getCompetencias();
+			    $("#editGrup").modal("hide");
 			});
 		},
 		deleteComp:function(id,idCentro){
 			var url = "competencia/"+id;
 			axios.delete(url).then(response=>{
+            this.getCompetencias();
 			  $("#detailcompetencia").modal("hide");
 			   if(response.data != 0){
 				 $.sweetModal({
@@ -64,7 +68,6 @@ new Vue({
 						content: 'Competencia eliminada correctamente',
 						icon: $.sweetModal.ICON_SUCCESS
 				});
-				this.getProgramas();
 			  }
 			});
 		},

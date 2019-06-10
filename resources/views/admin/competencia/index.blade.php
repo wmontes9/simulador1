@@ -38,10 +38,9 @@
               <td width="20" colspan="3"><button type="submit" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></i></button></td>
             </tr>
           </table>
-		</div>
-    @include("admin.competencia.edit")
+		</div>    
     </form>
+    @include("admin.competencia.edit")
 	</div>
   <script type="text/javascript" src="{{asset('js/controller/CompetenciaController.js')}}"></script>
-
 @endsection

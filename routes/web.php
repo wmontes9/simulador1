@@ -88,7 +88,7 @@ Route::group(["middleware"=>"protected_route"],function(){
 	Route::get("administrador/items/{id}edit","ItemController@edit");
 	route::get("administrador/items/update/{id}","ItemController@update");
     Route::get("administrador/items/delete/{id}","ItemController@destroy");
-    Route::get("administrador/Opciones/{id}edit","OpcionesActiController@edit");//edit detalle
+    //Route::get("administrador/Opciones/{id}edit","OpcionesActiController@edit");//edit detalle
 	route::get("administrador/Opciones/update/{id}","OpcionController@update");//update detalle
 	Route::get("administrador/Opciones/delete/{id}","OpcionController@destroy");//eliminar detalles
 
