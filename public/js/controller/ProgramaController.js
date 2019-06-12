@@ -70,11 +70,11 @@ new Vue({
 					});
 		    	});
 			},
-		 	getCompetencia:function(id){
-				var url = "getCompetencia";
-				axios.get(url).then(response=>{
-					$(location).attr("href","competencia");
-				});
+		 	 getCompetencia(id){
+			 	var url = "competencia/"+id;
+			 	axios.get(url).then(response=>{
+			 		$(location).attr("href","competencia");
+			 	});
 			},
 			getfichas(id){
 				var url = "ficha/"+id;

@@ -20,6 +20,17 @@ class CompetenciaController extends Controller
 
         return view("admin.competencia.index");
     }
+    public function getCompetencia()
+    {
+        $id = Session::get("programa");
+        $competencias = DB::table('competencia')
+            ->join('programa', 'competencia.id_programa', '=', 'programa.id')
+            ->where('competencia.id_programa', '=', $id)
+            ->select('competencia.*', 'programa.nombre')
+            ->get();
+        //$competencias = Competencia::where("id_programa","=",$id)->select("*")->get();
+        return  response()->json($competencias,200);
+    }
     public function create()
     {
         $competencias = Competencia::all();
@@ -104,15 +115,5 @@ class CompetenciaController extends Controller
             return $cant;
         }
     }
-    public function getCompetencia()
-    {
-        $id = Session::get("programa");
-        $competencias = DB::table('competencia')
-            ->join('programa', 'competencia.id_programa', '=', 'programa.id')
-            ->where('competencia.id_programa', '=', $id)
-            ->select('competencia.*', 'programa.nombre')
-            ->get();
-        //$competencias = Competencia::where("id_programa","=",$id)->select("*")->get();
-        return  response()->json($competencias,200);
-    }
+   
 }

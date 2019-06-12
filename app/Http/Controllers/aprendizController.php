@@ -31,7 +31,6 @@ class aprendizController extends Controller
         ->join('detalle_caso', 'detalle_caso.id_caso', '=', 'caso.id')
         ->where("users.id","=",$usuario_autenticado)
         ->select("caso.*","detalle_caso.*")->get();
-        dd($caso);
         return $caso;
     }
     public function getinfocaso(){
