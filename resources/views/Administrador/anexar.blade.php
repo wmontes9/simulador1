@@ -22,11 +22,10 @@
                         <div class="modal-body">
                             <div class="card-body">
                                 <div class="form-group row">
-                                 
                                     <div class="form-group row" style="margin-left: 20px;">
                                           <label  class="col-sm-4 col-form-label text-md-right">{{ __('Resultado') }}</label>
                                     
-                                          <div class="col-md-6">
+                                        <div class="col-md-6">
                                 
                                             <select name="resultado" class="form-control" >
                                             @foreach($resultado as $values)
@@ -34,32 +33,26 @@
                                               <option value="{{ $values->id }}">{{ $values->descripcion }}</option>
                                            
                                             @endforeach
-                                              
                                             </select>
-                                          </div>
-                                   </div>
-
-                                        <div class="form-group row" style="margin-left: 20px;">
-                                                  <label  class="col-sm-4 col-form-label text-md-right">{{ __('Descripcion') }}</label>
-
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="margin-left: 20px;">
+                                            <label  class="col-sm-4 col-form-label text-md-right">{{ __('Descripcion') }}</label>
                                             <div class="col-md-6">
                                                 <input type="text" class="form-control" v-model="descripcion" name="descripcion">
                                             </div>
-                                        </div>
-
-                                         <div class="form-group row" style="margin-left: 20px;">
-                                                  <label  class="col-sm-4 col-form-label text-md-right">{{ __('Estado') }}</label>
-
-                                            <div class="col-md-6">
+                                    </div>
+                                    <div class="form-group row" style="margin-left: 20px;">
+                                        <label  class="col-sm-4 col-form-label text-md-right">{{ __('Estado') }}</label>
+                                        <div class="col-md-6">
                                             <select name="estado" class="form-control" >
-                                               <option value="Activo">Activo</option>
-                                               <option value="Inactivo">Inactivo</option>
+                                            <option value="Activo">Activo</option>
+                                            <option value="Inactivo">Inactivo</option>
                                             </select>
-                                            </div>
                                         </div>
-                                  
-                                      <p><input  type="submit"  value="Guardar"  class="btn btn-info" style="margin-left: 300px;"></p>
-                        </div>
+                                    </div>
+                                    <p><input  type="submit"  value="Guardar"  class="btn btn-info" style="margin-left: 300px;"></p>
+                                </div>
                          <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                       </div>

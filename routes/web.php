@@ -20,6 +20,7 @@ Route::group(["middleware"=>"protected_route"],function(){
     Route::post("admin/programa/update/{id}","ProgramaController@update");
     Route::resource("admin/competencia","CompetenciaController");
     //Route::post("admin/competencia/store","CompetenciaController@store");
+    Route::get("admin/competencia/getCompetencias/{id}","CompetenciaController@getCompetencias");
     Route::get("admin/getCompetencia","CompetenciaController@getCompetencia");
     Route::get("admin/getResultados","ResultadoController@getResultados");
     Route::get("admin/getResultado/{id}","ResultadoController@getResultado");

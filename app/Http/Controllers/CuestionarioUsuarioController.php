@@ -28,7 +28,6 @@ class CuestionarioUsuarioController extends Controller
         ->where('competencia.id', '=', $id)   
         ->select("cuestionario.*")
         ->get()->toArray();
-        //dd($cuestionario);
         $id_cuestionario = $cuestionario[0]->id;
         Session::put("cuestionario",$id_cuestionario);
         $preguntas =DB::table("cuestionario")
@@ -75,10 +74,13 @@ class CuestionarioUsuarioController extends Controller
         $longitud = count($array);
         $valorpregunta = 100/($longitud-1);
         $cuenta = 0;
-        for($i = 1; $i < $longitud; $i++){
-           if($request["preg$i"] == "true"){
-            $cuenta++;
-           }
+        foreach ($array as $key => $value) {
+            $pregunta = strpos($key, "preg");
+            if($pregunta !== false){                
+                if($value === "true"){
+                    $cuenta++;
+                }                
+            }
         }
         $calificacion = round($cuenta*$valorpregunta, 2);
         $iduser = Auth::User()->id;

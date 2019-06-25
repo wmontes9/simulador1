@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Programa;
 use App\Competencia;
 use App\Resultado;
+use App\users;
 use DB;
 use Session;
 use Auth;
@@ -16,7 +17,7 @@ class aprendizController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getinfoInicio()
+    public function getInfoInicio()
     {
         $usuario_autenticado = Auth::User()->id;
         //ajustar consulta
@@ -27,9 +28,9 @@ class aprendizController extends Controller
         ->join('competencia', 'competencia.id_programa', '=', 'programa.id')
         ->join('resultado', 'resultado.id_competencia', '=', 'competencia.id')
         ->join('detalle_resultado', 'detalle_resultado.id_resultado', '=', 'resultado.id')
-        ->join('caso', 'detalle_resultado.id_resultado', '=', 'caso.id')
+        ->join('caso', 'detalle_resultado.id_caso', '=', 'caso.id')
         ->join('detalle_caso', 'detalle_caso.id_caso', '=', 'caso.id')
-        ->where("users.id","=",$usuario_autenticado)
+        ->where("detalle_ficha.id_user","=",$usuario_autenticado)
         ->select("caso.*","detalle_caso.*")->get();
         return $caso;
     }

@@ -27,6 +27,7 @@
                     </div>
                 </div> 
             </div>
+            
         </div>
         <div class="row">
                 <div class="form-group text-center">
@@ -35,5 +36,5 @@
         </div>
     </form>
     <script type="text/javascript" src="{{asset('js/controller/CasoProgramaController.js')}}"></script>
-
-    @endsection
+</div>
+@endsection

@@ -1,6 +1,5 @@
 @extends("layouts.app_admin")
 @section("content")
-
 <div class="container">
     <div class="row text-center">
         <h3>Usuarios</h3>

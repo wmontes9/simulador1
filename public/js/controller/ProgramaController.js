@@ -70,7 +70,7 @@ new Vue({
 					});
 		    	});
 			},
-		 	 getCompetencia(id){
+		 	getCompetencia(id){
 			 	var url = "competencia/"+id;
 			 	axios.get(url).then(response=>{
 			 		$(location).attr("href","competencia");

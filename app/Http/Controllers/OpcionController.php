@@ -22,7 +22,7 @@ class OpcionController extends Controller
    }
  	public function store(Request $Request){
 
-    $opciones_actividad = new Opciones_Actividad;
+    $opciones_actividad = new Opcion;
     $opciones_actividad->id_actividad = $Request->input('actividad');
     $opciones_actividad->descripcion = $Request->input('descripcion');
     $opciones_actividad->save();

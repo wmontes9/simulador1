@@ -9,15 +9,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- CSRF Token -->
     <title>@yield("title")</title>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('fonts/fontawesome-webfont.svg') }}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <script src="{{asset('js/jquery.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/main.js')}}"></script>
-    <script src="{{asset('js/vue.js')}}"></script>
-    <script src="{{asset('js/axios.js')}}"></script>
 </head>
 
 <body>
