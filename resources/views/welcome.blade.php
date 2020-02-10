@@ -3,127 +3,106 @@
   <div class="container-fluid">
   </div>
   <div class="video text-center">
-  <iframe width="70%" height="500" src="{{url('videos/introSIPAA.mp4')}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay=1 controls=1 rel=0 showinfo=0></iframe>
-</div>
-   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px; margin-left: 60px; margin-right: 60px;">
-   
-   <ol class="carousel-indicators">
+    <iframe width="70%" height="500" src="{{url('videos/introSIPAA.mp4')}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay=1 controls=1 rel=0 showinfo=0></iframe>
+  </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px; margin-left: 60px; margin-right: 60px;">
+    <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
-   
-   <div class="carousel-inner">
+    <div class="carousel-inner">
       <div class="item active " >
-         <DIV id="SLAT"><h3>Lina Paola Córdoba Orjuela</h3> <P>
-Ingeniera de Sistemas y Computación<br>
-Esp. Base de datos<br>
-Mg. Gestión de la tecnología educativa<br>
-Instructor – Investigador<br>
-Área de Gestión Administrativa y Documental<br>
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
-lpcordoba87@misena.edu.co<br></P></DIV>
-        
-       
+        <DIV id="SLAT"><h3>Lina Paola Córdoba Orjuela</h3> <P>
+          Ingeniera de Sistemas y Computación<br>
+          Esp. Base de datos<br>
+          Mg. Gestión de la tecnología educativa<br>
+          Instructor – Investigador<br>
+          Área de Gestión Administrativa y Documental<br>
+          Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
+          lpcordoba87@misena.edu.co<br></P>
+        </DIV>
       </div>
-
       <div class="item" class="SLA text-center">
-        <DIV id="SLAT"><h3>Diana Edith Santamaría Rodríguez</h3> <P>
-Contadora Publica<br>
-Esp. Planeación y gestión del desarrollo territorial<br>
-Instructor – Investigador<br>
-Instructor – Investigador<br>
-Área de Gestión Administrativa y Documental<br>
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
-desantamaria@misena.edu.co<br>
-
-            </P>
-          </DIV>
+        <DIV id="SLAT"><h3>Diana Edith Santamaría Rodríguez</h3> 
+          <P>
+            Contadora Publica<br>
+            Esp. Planeación y gestión del desarrollo territorial<br>
+            Instructor – Investigador<br>
+            Instructor – Investigador<br>
+            Área de Gestión Administrativa y Documental<br>
+            Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
+            desantamaria@misena.edu.co<br>
+          </P>
+        </DIV>
       </div>
-        <div class="item" class="SLA text-center">
-        <DIV id="SLAT"><h3>Edilberto Corredor Niño</h3> <P>
-
-Economista<br>
-Esp. Finanzas públicas<br>
-Esp. Gerencia en instituciones de seguridad social<br>
-Instructor - Investigador<br>
-Área de Gestión Administrativa y Documental<br>
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
-ecorredor9@misena.edu.co<br>
- </P>
-            </DIV>
-
-        
-      </div>
-        <div class="item" class="SLA text-center">
-        <DIV id="SLAT">
-<h3>Rocío Del Mar Rodríguez Parra</h3> <P>
-
-Administradora de empresas<br>
-Esp. Alta gerencia en mercadotecnia<br>
-Mg. Administración de organizaciones<br>
-Investigador<br>
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA - CEGAFE,<br>
-rociodelmar_rp@misena.edu.co<br>
-           
-           
-            </P>
-            </DIV>
-      </div>
-<div class="item" class="SLA text-center">
-        <DIV id="SLAT">
-<h3>Boris Ferney Bernal</h3> <P>
-
-
-Administrador de empresas<br>
-Esp. Gerencia de instituciones de seguridad en salud<br>
-Instructor - Investigador<br>
-Área de Gestión Administrativa y Documental<br>
-
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
-bfbernal4@misena.edu.co<br>
-           
-           
-            </P>
-            </DIV>
+      <div class="item" class="SLA text-center">
+        <DIV id="SLAT"><h3>Edilberto Corredor Niño</h3>
+          <P>
+            Economista<br>
+            Esp. Finanzas públicas<br>
+            Esp. Gerencia en instituciones de seguridad social<br>
+            Instructor - Investigador<br>
+            Área de Gestión Administrativa y Documental<br>
+            Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
+            ecorredor9@misena.edu.co<br>
+          </P>
+        </DIV>
       </div>
       <div class="item" class="SLA text-center">
         <DIV id="SLAT">
-<h3>Wilson Montes Suarique</h3> <P>
+          <h3>Rocío Del Mar Rodríguez Parra</h3>
+          <P>
+            Administradora de empresas<br>
+            Esp. Alta gerencia en mercadotecnia<br>
+            Mg. Administración de organizaciones<br>
+            Investigador<br>
+            Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA - CEGAFE,<br>
+            rociodelmar_rp@misena.edu.co<br>
+          </P>
+        </DIV>
+      </div>
+      <div class="item" class="SLA text-center">
+        <DIV id="SLAT">
+          <h3>Boris Ferney Bernal</h3>
+          <P>
+            Administrador de empresas<br>
+            Esp. Gerencia de instituciones de seguridad en salud<br>
+            Instructor - Investigador<br>
+            Área de Gestión Administrativa y Documental<br>
 
-
-  
-Ingeniero electrónico<br>
-Tecnólogo en análisis y desarrollo de sistemas de información <br>
-Especialista tecnólogico en aplicaciones para dispositivos móviles<br>
-Investigador<br>
-Área de sistemas<br>
-Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA-CEGAFE<br>
-wmontes9@misena.edu.co<br>
-           
-           
-            </P>
+            Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA – CEGAFE<br>
+            bfbernal4@misena.edu.co<br>
+          </P>
+        </DIV>
+      </div>
+      <div class="item" class="SLA text-center">
+        <DIV id="SLAT">
+            <h3>Wilson Montes Suarique</h3> 
+          <P>
+            Ingeniero electrónico<br>
+            Tecnólogo en análisis y desarrollo de sistemas de información <br>
+            Especialista tecnólogico en aplicaciones para dispositivos móviles<br>
+            Investigador<br>
+            Área de sistemas<br>
+            Centro de Gestión Administrativa y Fortalecimiento Empresarial SENA-CEGAFE<br>
+            wmontes9@misena.edu.co<br>
+          </P>
             </DIV>
       </div>
       <div class="item">
-         <img src="{{url('images/innovem.png')}}" class="SLA" id="innovem" >
+        <img src="{{url('images/innovem.png')}}" class="SLA" id="innovem" >
       </div>
     </div>
-
-    
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</body>
-
-  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>    
     <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="margin-top: 20PX; margin-left: 60px; background-color: #238276; color: #FFFFFF;"><strong>AYUDA&nbsp;</strong><i class="fas fa fa-question"></i></button>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -189,6 +168,6 @@ wmontes9@misena.edu.co<br>
     else
     visits = parseInt(visits) + 1
     setCookie("counter", visits, now)
-    document.write("Esta es tu visita numero: " + visits)
+    document.write("Visita numero: " + visits)
   </script>
   

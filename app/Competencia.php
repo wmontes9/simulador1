@@ -20,5 +20,4 @@ class Competencia extends Model
     public function Detalle_anexo(){
         return $this->hasMany("App\Detalle_Anexo");
     }
-    //
 }

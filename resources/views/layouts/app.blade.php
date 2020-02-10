@@ -30,82 +30,78 @@
     <body>
         <div class="fondo">
             <img src="{{url('images/fondo.png')}}" class="img1">
-
         </div>
         
         <div id="preloader">
             <div id="animation"></div>
         </div>
         <div class="row">
-                <div class="container-fluid">
-                    <div class="baner">
-                        
-                        <img src="{{url('images/Logoproyecto.png')}}" class="img1">
-                        
-                            <img src="{{url('images/LOGOBLANCO.png')}}" class="img2">
-                            <h1>Simulador de procesos Administrativos <BR>para el Aprendizaje</h1>
-                            <p>Centro de Gestión Administrativa y Fortalecimiento Empresarial <BR>CEGAFE</p>
+            <div class="container-fluid">
+                <div class="baner">
+                    <img src="{{url('images/Logoproyecto.png')}}" class="img1">
+                    <img src="{{url('images/LOGOBLANCO.png')}}" class="img2">
+                    <h1>Simulador de procesos Administrativos <BR>para el Aprendizaje</h1>
+                    <p>Centro de Gestión Administrativa y Fortalecimiento Empresarial <BR>CEGAFE</p>
                 </div>
-        <div id="app">
-            @guest
-                        <a href="#newUser" class="pull-right btn btn-default" data-toggle="modal" style="margin-top: 20px; margin-right:60px;"> Registrarse</a>
-                    <a href="#login" class="pull-right btn btn-default" data-toggle="modal" style="margin-top: 20px; margin-right:60px;"> Iniciar Sesión</a>
-                        @else
-                            <li class="dropdown pull-right">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                            Salir
+                <div id="app">
+                    @guest
+                                <a href="#newUser" class="pull-right btn btn-default" data-toggle="modal" style="margin-top: 20px; margin-right:60px;"> Registrarse</a>
+                            <a href="#login" class="pull-right btn btn-default" data-toggle="modal" style="margin-top: 20px; margin-right:60px;"> Iniciar Sesión</a>
+                                @else
+                                    <li class="dropdown pull-right">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                            {{ Auth::user()->name }} <span class="caret"></span>
                                         </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();">
+                                                    Salir
+                                                </a>
+
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                    {{ csrf_field() }}
+                                                </form>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                        @endguest
-                        <main class="py-4">
-                            @yield('content') 
-                            <div id="app-login">
-                                @include("/auth.login")
-                            </div>
-                            <div id="app-register">
-                                @include("/auth.register")
-                            </div>
-                        </main>
-            <script src="{{asset('js/components/login.js')}}"></script>
-            <script src="{{asset('js/components/register.js')}}"></script>
-        </div>
-        <footer>
-        
-            <div class="footer">
-            <p>Servicio Nacional de Aprendizaje SENA - Dirección General <br>
-    Calle 57 No. 8 - 69 Bogotá D.C. (Cundinamarca), Colombia<br>
-    Conmutador Nacional (57 1) 5461500 - Extensiones<br>
-    Atención presencial: lunes a viernes 8:00 a.m. a 5:30 p.m. - Resto del país sedes y horarios<br>
-    Atención al ciudadano: Bogotá (57 1) 5925555 - Línea gratuita y resto del país 018000 910270<br>
-    Correo servicio al cliente: gpservicioalcliente@sena.edu.co<br>
-    Todos los derechos 2017 SENA - Políticas de privacidad y condiciones uso Portal Web SENA</p>
-            <div class="circulo i2" >
-                <img src="{{url('images/innovem.png')}}" class="imgfo" >
-            </div>
-                
-                <div class="circulo">
-                <img src="{{url('images/LOGOALETHEIA.jpg')}}" class="imgfo" width="80px">
+                                @endguest
+                                <main class="py-4">
+                                    @yield('content') 
+                                    <div id="app-login">
+                                        @include("/auth.login")
+                                    </div>
+                                    <div id="app-register">
+                                        @include("/auth.register")
+                                    </div>
+                                </main>
+                    <script src="{{asset('js/components/login.js')}}"></script>
+                    <script src="{{asset('js/components/register.js')}}"></script>
                 </div>
-                <div class="circulo i2" >
-                <img src="{{url('images/sennova.png')}}" class="imgfo" >
-                </div>
+                <footer>
+                    <div class="footer">
+                        <p>Servicio Nacional de Aprendizaje SENA - Dirección General <br>
+                            Calle 57 No. 8 - 69 Bogotá D.C. (Cundinamarca), Colombia<br>
+                            Conmutador Nacional (57 1) 5461500 - Extensiones<br>
+                            Atención presencial: lunes a viernes 8:00 a.m. a 5:30 p.m. - Resto del país sedes y horarios<br>
+                            Atención al ciudadano: Bogotá (57 1) 5925555 - Línea gratuita y resto del país 018000 910270<br>
+                            Correo servicio al cliente: gpservicioalcliente@sena.edu.co<br>
+                            Todos los derechos 2017 SENA - Políticas de privacidad y condiciones uso Portal Web SENA
+                        </p>
+                        <div class="circulo i2" >
+                            <img src="{{url('images/innovem.png')}}" class="imgfo" >
+                        </div>
+                        <div class="circulo">
+                            <img src="{{url('images/LOGOALETHEIA.jpg')}}" class="imgfo" width="80px">
+                        </div>
+                        <div class="circulo i2" >
+                            <img src="{{url('images/sennova.png')}}" class="imgfo" >
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </footer>
-        </div>
         </div>
     </body>
 </html>

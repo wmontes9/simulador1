@@ -54,7 +54,7 @@ class aprendizController extends Controller
         ->join('ficha', 'detalle_ficha.id_ficha', '=', 'ficha.id')
         ->join('programa', 'ficha.id_programa', '=', 'programa.id')
         ->where("users.id","=",$usuario_autenticado)
-        ->select("programa.*","Ficha.codigo as codigo_ficha")->get();
+        ->select("programa.*","ficha.codigo as codigo_ficha")->get();
         $idprograma = $caso[0]->id;
         $competencia = DB::table("competencia")
         ->join('programa', 'competencia.id_programa', '=', 'programa.id')

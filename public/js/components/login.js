@@ -17,7 +17,12 @@ var login = new Vue({
 					$("#login").modal("hide");
 					$(location).attr("href","administrador/actividad");
 					//$(location).attr("href","admin/caso");
-				}else if(response.data == "3"){
+				}else if(response.data == "2"){
+					$("#login").modal("hide");
+					//@ts-check$(location).attr("href","aprendiz/index");
+					$(location).attr("href","instructor");
+				}		
+				else if(response.data == "3"){
 					$("#login").modal("hide");
 					//@ts-check$(location).attr("href","aprendiz/index");
 					$(location).attr("href","aprendiz");

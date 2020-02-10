@@ -32,7 +32,7 @@ class ActividadUsuarioController extends Controller
         ->where('competencia.id', '=', $id)   
         ->select("competencia.*")
         ->get()->toArray();
-        $actividad = DB::table("Actividad")
+        $actividad = DB::table("actividad")
         ->join('resultado', 'actividad.id_resultado', '=', 'resultado.id')
         ->join('detalle_resultado', 'detalle_resultado.id_resultado', '=', 'resultado.id')
         ->where("detalle_resultado.id_caso","=","$caso")
