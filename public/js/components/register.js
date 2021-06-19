@@ -23,7 +23,7 @@ var register = new Vue({
 				type_document:this.type_document
 			}).then(response=>{
 				$("#register").modal("hide");
-				$(location).attr("href","inicio");
+				$(location).attr("href","aprendiz");
 				$("#preloader").hide();
 			}).catch(error=>{
 				this.errors = error.response.data.errors;

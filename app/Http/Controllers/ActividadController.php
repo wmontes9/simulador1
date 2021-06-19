@@ -15,7 +15,7 @@ class ActividadController extends Controller
     ->select("actividad.id as id","resultado.descripcion as nombre","actividad.id_resultado as idresultado","actividad.descripcion as descripcion","actividad.estado as estado")
     ->get()->toArray();
 
-    $resultado = Resultado::all();
+    $resultado = resultado::all();
     return view('administrador.inicio',['actividad'=>$actividad],['resultado'=>$resultado]);
   
    }

@@ -14,7 +14,7 @@
 						<td colspan="3">Opciones</td>
 					</tr>
 					<tr v-for="objetivo in objetivos">
-						<td>@{{objetivo.id}}</td>
+						<td>{{objetivo.id}}</td>
                         <td>@{{objetivo.id_caso}}</td>
 						<td>@{{objetivo.descripcion}}</td>
 						<td><a href="" v-on:click.prevent="editobjetivoCaso(objetivo)"><i class="glyphicon glyphicon-pencil" aria-hidden="true"></i></a></td>
